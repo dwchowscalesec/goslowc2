@@ -8,6 +8,9 @@ A demonstration of using GoLang and GCP Storage for a quick and easy evasion pay
 4. Running GoLang os.exec and the syscall.call methods to unsafe (non type casted) unsigned integer pointers C style for interesting Windows 10/11 Q4 2022 Defender default 'evasion' shell or additional payload routines vs. the C running the system method that immediately triggers a backdoor alert and cloud scan
 5. General grudge: Google SOC sent me a nasty gram about my C payload stored in my personal Google Drive account. GoLang was may by Google Developers. I wanted to make it ironic because this would have been so much easier using a packer + python3.
 
+### Complementing gowrap module
+This module is to demonstrate using os.exec to wrap and execute another Go script or binary as a subprocess which easily can trigger an IOC but also allows for easy ingestion (with some modification) of running input.txt with straight GoLang WinAPI sys calls for future "evasion" considerations. I also included notes about some strange behaviors found when using user32.dll MessageBoxA.
+
 
 ## Code Setup
 go mod init goslowc2/main
