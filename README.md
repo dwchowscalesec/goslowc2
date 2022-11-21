@@ -65,10 +65,14 @@ Grab a JSON key to download and run in the same directory as goslowc2
 
 ## Runtime
 **IMPORTANT**: Be sure to modify any variables in the code before building as the initial values are for demo purposes only
-cp <yourserviceaccountkey.json> ./
-go build goslowc2.go
-goslowc2.exe <-- this is going to be your payload running on target host
 
+    cp <yourserviceaccountkey.json> ./
+    go build goslowc2.go
+    goslowc2.exe #this is going to be your payload running on target host
+
+![enter image description here](https://github.com/dc401/goslowc2/blob/main/screenshots/runtime2.png?raw=true)
+
+![enter image description here](https://github.com/dc401/goslowc2/blob/main/screenshots/runtime1.png?raw=true)
 
 ## Notes
 **DISCLAIMER**: The author is NOT responsible for misuse or abuse of this educational source
