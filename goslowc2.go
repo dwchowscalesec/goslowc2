@@ -173,7 +173,7 @@ func main() {
 	//driver section
 
 	//bucket and object details
-	var bucket string = "xtecsystems-labs"
+	var bucket string = "YOURBUCKET"
 	var object_input string = "input.txt"
 	var object_output string = "output.txt"
 
