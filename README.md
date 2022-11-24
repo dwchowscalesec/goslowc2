@@ -2,7 +2,7 @@
 A demonstration of using GoLang and GCP Storage for a quick and easy evasion payload.
 
 ### Why?
-1. Found GoLang is not as widely supporter for reverse engineering tools without plugins or some tuning which also infers that EDR platforms haven't caught up as much either
+1. Found GoLang is not as widely supported for reverse engineering tools without plugins or some tuning which also infers that EDR platforms haven't caught up as much either
 2. GoLang allows the advantage of scripting language but the performance of a compiled language because you can 'go build foo.go' something
 3. Google Cloud Platform (GCP) Storage SDK automatically allows for authentication TLS v1.2 secure endpoints and a scratch pad for input and output for easy asynchronous communication
 4. Running GoLang os.exec and the syscall.call methods to unsafe (non type casted) unsigned integer pointers C style for interesting Windows 10/11 Q4 2022 Defender default 'evasion' shell or additional payload routines vs. the C running the system method that immediately triggers a backdoor alert and cloud scan
