@@ -6,7 +6,7 @@ A demonstration of using GoLang and GCP Storage for a quick and easy evasion pay
 2. GoLang allows the advantage of scripting language but the performance of a compiled language because you can 'go build foo.go' something
 3. Google Cloud Platform (GCP) Storage SDK automatically allows for authentication TLS v1.2 secure endpoints and a scratch pad for input and output for easy asynchronous communication
 4. Running GoLang os.exec and the syscall.call methods to unsafe (non type casted) unsigned integer pointers C style for interesting Windows 10/11 Q4 2022 Defender default 'evasion' shell or additional payload routines vs. the C running the system method that immediately triggers a backdoor alert and cloud scan
-5. General grudge: Google SOC sent me a nasty gram about my C payload stored in my personal Google Drive account. GoLang was may by Google Developers. I wanted to make it ironic because this would have been so much easier using a packer + python3.
+5. General grudge: Google SOC sent me a nasty gram about my C payload stored in my personal Google Drive account. GoLang was made by Google Developers. I wanted to make it ironic because this would have been so much easier using a packer + python3.
 6. Maybe you don't have access to the standard MSF multi/handler in a pen test?
 
 ### Complementing gowrap module
